@@ -1,0 +1,17 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "Landing page for natours",
+  "main": "index.js",
+  "scripts": {
+     "sass" : "node-sass -w -r sass/main.scss css/style.css"
+    },
+  "author": "suyeon",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
