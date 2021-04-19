@@ -1,4 +1,22 @@
 .btn {
+  &,
+  &:link,
+  &:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all .2s;
+  position: relative;
+  font-size: $default-font-size; 
+  
+  // Change for the <button> element
+  border: none;
+  cursor: pointer;
+  }
+
+
   &:hover {
     transform: translateY(-0.3rem);
     box-shadow: 0 1rem 2rem rgba($color-black,.2);
@@ -9,7 +27,9 @@
     }
   }
 
-  &:active {
+  &:active,
+  &:focus {
+    outline: none;
     transform: translateY(-0.1rem);
     box-shadow: 0 .5rem 1rem rgba($color-black,.2);
   }
@@ -51,17 +71,6 @@
   }
 }
 
-.btn:link,
-.btn:visited {
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 1.5rem 4rem;
-  display: inline-block;
-  border-radius: 10rem;
-  transition: all .2s;
-  position: relative;
-  font-size: $default-font-size;
-}
 
 .btn-text {
   &:link,
